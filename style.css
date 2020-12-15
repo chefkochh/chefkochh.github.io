@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(44, 5, 49);
+    
+}
+li a {
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-size: 30px;
+    padding: 0 30px;
+}
+h1:hover{
+    text-shadow: 0 5px gray;
+}
+#text-links {
+    transition-duration: 0.5s;
+    background-image: repeating-linear-gradient(
+      90deg,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red,
+      violet
+    );
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 6s ease infinite;
+    font-size: 35px;
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 25%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
