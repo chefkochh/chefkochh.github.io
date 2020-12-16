@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <link href="style.css" rel="stylesheet" type="text/css">
+<title>H</title>
+<script src="title.js"></script>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
-<title>C H E F K O C H</title>
-<li> <a href="https://discord.gg/mGP2PtZdGZ" class="links" id="text-links">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀D I S C O R D </a></li>
-<li> <a href="https://github.com/Chefkochh" class="links" id="text-links">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀ G I T</a></li>
-<li><a href="index.html" class="links" id="text-links"></a></li>
+    <h1>C H E F K O C H
+      
+    </h1>
+    <h2>#CythosaSec</h2>
+    <li>
+        <a href="https://github.com/chefkochh">G I T H U B</a>
+        <a href="https://discord.gg/mGP2PtZdGZ">D I S C O R D</a>
+        
+    </li>
+    <p id="clock"></p>
+</body>
 
-</html>
+<audio autoplay="" loop="" id="player">
+    <source src="music.mp3">
+    <script>
+    var audio = document.currentScript.parentElement;
+    audio.volume = 0.3;
+    </script>
+    </audio>
+
+<script>
+    update_clock();
+
+    function update_clock() {
+        var currentTime = new Date(),
+            hours = currentTime.getHours(),
+            minutes = currentTime.getMinutes();
+        seconds = currentTime.getSeconds();
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+
+        var clock_element = document.getElementById("clock");
+
+        clock_element.innerHTML = hours + " : " + minutes + " : " + seconds;
+    }
+    setInterval(update_clock, 1000);
+
+</script>

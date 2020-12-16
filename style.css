@@ -1,48 +1,67 @@
 body {
-    background-color: rgb(44, 5, 49);
-    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
-li a {
-    text-decoration: none;
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-size: 40px;
+    color: rgb(42, 5, 92);
+}
+h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-size: 40px;
+    color: rgb(42, 25, 117);
+}
+li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: inline-block;
+    color: rgb(36, 4, 66);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+li a {
+    padding: 0 50px;
+}
+
+a {
+    color: darkgray;
     text-decoration: none;
-    color: gray;
-    font-family: Source Sans Pro;
-    font-weight: lighter;
-    font-size: 30px;
-    padding: 0 30px;
+    font-size: 25px;
+    transition: .5s ease;
 }
-h1:hover{
-    text-shadow: 0 5px gray;
-}
-#text-links {
-    transition-duration: 0.5s;
-    background-image: repeating-linear-gradient(
-      90deg,
-      violet,
-      indigo,
-      blue,
-      green,
-      yellow,
-      orange,
-      red,
-      violet
-    );
-    background-size: 800% 800%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 6s ease infinite;
+a:hover {
     font-size: 35px;
-  }
-  @keyframes rainbow {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 25%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+}
+
+
+p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    color: darkgray;
+    font-size: 15px;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    background: url(".jpg");
+    background-size: cover;
+}
